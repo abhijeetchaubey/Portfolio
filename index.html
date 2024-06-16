@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/19210c4f62.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="background-img">
+        </div>
+        <div class="container">
+            <nav class="nav-bar">
+                <!-- <img src="./images/logo.png" alt="" class="logo"> -->
+                <div class="logo"><h1><span>Abhi</span>jeet</h1></div>
+
+
+                    <ul  id="sidemenu" class="nav-item">
+                        <li > <a href="#Home">Home</a> </li>
+                        <li> <a href="#about">About</a> </li>
+                        <li> <a href="#services">Services</a> </li>
+                        <li> <a href="#portfolio">Portfolio</a> </li>
+                        <li> <a href="#Contact">Contact</a> </li>
+                        <i id="nav-close" class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i   id="nav-menu" class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hii, I'm <span>Abhijeet</span><br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="leftside">
+                    <img src="./images/Abhijeet.jpg" alt="">
+                </div>
+                <div class="rightside">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ea fugit repellat adipisci facilis neque natus, fugiat magnam accusamus impedit necessitatibus blanditiis nihil quod doloribus corporis mollitia veniam. Cupiditate eum quas repudiandae velit aliquid atque libero consequatur possimus perferendis voluptas, modi eos, aut doloribus laborum esse dolorem dignissimos minima, accusantium in ab! Tenetur quaerat harum accusantium corrupti, architecto nihil, aliquid nobis dicta cum labore voluptas voluptatum id. Repellendus, praesentium similique!</p>
+
+                    <!-- ----------------------Imp--------------- -->
+                    <div >
+                        <ul class="tab-titles" >
+                            <li class="tab-links active-link"onclick="opentab('skills')" >Skill</a> </li>
+                            <li class="tab-links"onclick="opentab('Experience')">Experience</a></li>
+                            <li class="tab-links"onclick="opentab('Education')">Education</a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Developer</span><br>Designing web/App interfaces</li>
+                            <li>Web Development<span><br>Web app Development</span></li>
+                            <li>App Development<span><br>Building Android/ioS apps</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023- Current</span><br>Trainee Intern at IBM</li>
+                            <li>2018-202<span><br>Lorem, ipsum.</span></li>
+                            <li>2022-2023<span><br>Lorem, ipsum dolor.</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023-current</span><br>Btech CSE at UPES</li>
+                            <li>2020-2022<span><br>Intermediate</span></li>
+                            <li>2018-2020<span><br>HighSchool</span></li>
+                        </ul>
+
+                        <!-- ------------------------------ -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ---------------Sevives------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <li class="services-1">
+                    <div class="list-item1" id="services-logo"><i class="fa-solid fa-code"></i> </div>
+                    <div class="list-item1" id="services-work">Web Design</div>
+                    <div class="list-item1" id="services-discription">Discription Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, maxime.</div>
+                    <div class="list-item1" id="learn-more"><a href="#">Learn more</a></div>
+                </li>
+                <li class="services-2">
+                    <div class="list-item2" id="services-logo"><i class="fa-solid fa-crop-simple"></i> </div>
+                    <div class="list-item2" id="services-work">Web Design</div>
+                    <div class="list-item2" id="services-discription">Discription Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, maxime.</div>
+                    <div class="list-item2" id="learn-more"><a href="#">Learn more</a></div>
+                </li>
+                <li class="services-3">
+                    <div class="list-item3" id="services-logo"><i class="fa-brands fa-app-store"></i> </div>
+                    <div class="list-item3" id="services-work">Web Design</div>
+                    <div class="list-item3" id="services-discription">Discription Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, maxime.</div>
+                    <div class="list-item3" id="learn-more"><a href="#">Learn more</a></div>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------Portfolio--------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/work-1.png" alt="work-image"id="work-img">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The App Connects you to the talented people around the world</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work"><img src="./images/work-2.png" alt="work-image"id="work-img">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The App Connects you to the talented people around the world.Download it from playstore</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            
+            <div class="work"><img src="./images/work-3.png" alt="work-image"id="work-img">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The App Connects you to the talented people around the world.Download it from playstore</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"class="btn">See more</a>
+    </div>
+</div>
+
+<!-- --------------------Contact------------------ -->
+
+<div id="Contact">
+    <div class="container">
+        <div class="contact-list">
+            <div class="left-side">
+                <h1 class="sub-title">Contact Me</h1>
+
+                <div class="mail-me">
+                    <div class="mail-icon"><i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="mail">
+                        <a href="mailto:chaubeyabhijeet36@gmail.com">chaubeyabhijeet36@gmail.com</a>
+                    </div>
+                </div>
+                <div class="call-me">
+                    <div class="call-icon"><i class="fa-solid fa-square-phone"></i>
+                    </div>
+                    <div class="call"><a href="tel:9580174050">9580174050</a>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <div class="insta"id="social" ><a href="https://www.instagram.com/abhijeetchaube_/" ><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="linkedin" id="social"><a href="https://www.linkedin.com/in/abhijeet-chaube-708683285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="X" id="social"><a href="https://x.com/abhijeetcha10?t=7fFKgnJo7m6vwjCgabogfQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="github" id="social" ><a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <button><a href="./images/RESUME.pdf" download >Download CV</a></button>
+            </div>
+            <div class="right-side">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="form-input" placeholder="Your Name" required> <br>     <br> <br>
+                    <input type="text" name="Email" id="form-input" placeholder="your E-mail" required> <br> <br> <br>
+                    <textarea name="Message" rows="6" id="form-input" placeholder="your Message"
+                    ></textarea>
+                    <br>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+                <span id="msg" onclick="btnclick()"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright © <span> Abhijeet </span>. All Rights Reserved</p>
+</div>
+</body>
+<script src="main.js" >
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz4MybZ_FIoJV60VQDgvnwRNPpE7OQT3MHf5ObAhL_C3aP8GuAWcQRoqW0n3bZA7LHH/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message Sent Successfully "
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</html>
